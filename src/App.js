@@ -1,16 +1,18 @@
-import { BrowserRouter, Routes, Router  } from "react-router-dom";
-import {Home} from './pages/Home';
-import{Details} from './pages/Details';
+import Home from './pages/Home/index';
+import Details from './pages/Details/index';
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
+
 import './styles.css';
-function Routes() {
+function Routess() {
   return (
     <BrowserRouter>
+
     <Routes>
-      <Router path="/" elemento={<Home/>}/>
-      <Router path="/details:id" elemento={<Details/>}/>
-    </Router>
-    </BrowserRouter>
+    <Route path = '/'  element = { < Home/>}/> 
+    <Route path = '/services' element = { <Details/>}/> 
+    </Routes>
+    </BrowserRouter> 
   );
 }
 
-export default Routes;
+export default Routess;

@@ -3,7 +3,7 @@ import './styles.css';
 function Details() {
     return (
       <div >
-        Details
+        sadad
       </div>
     );
   }
